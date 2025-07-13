@@ -3,23 +3,23 @@ main = "src/worker.ts"
 compatibility_date = "2025-04-01"
 compatibility_flags = [ "nodejs_compat" ]
 # if you want use custom_domain, you need to add routes
-routes = [
- 	{ pattern = "temp-email-api.yukies.top", custom_domain = true },
- ]
+# routes = [
+# 	{ pattern = "temp-email-api.xxxxx.xyz", custom_domain = true },
+# ]
 
 # if you want deploy worker with frontend assets, you need to add assets
-[assets]
-directory = "../frontend/dist/"
-binding = "ASSETS"
-run_worker_first = true
+# [assets]
+# directory = "../frontend/dist/"
+# binding = "ASSETS"
+# run_worker_first = true
 
 # enable cron if you want set auto clean up
 # [triggers]
 # crons = [ "0 0 * * *" ]
 
-send_email = [
-   { name = "SEND_MAIL" },
-]
+# send_email = [
+#    { name = "SEND_MAIL" },
+# ]
 
 [vars]
 # DEFAULT_LANG = "zh"
